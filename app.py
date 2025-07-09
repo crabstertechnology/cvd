@@ -112,7 +112,9 @@ def predict():
 
 # Run the Flask app
 if __name__ == '__main__':
-    print("Started application🚀")
+    
+    print("🚀 Starting Flask server...")
+    app.run(host='0.0.0.0', port=5001, debug=True)
     # This will run the Flask development server
     # debug=True allows for automatic code reloading and detailed error messages
     app.run(debug=True)
